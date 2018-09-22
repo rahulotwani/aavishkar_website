@@ -6,12 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aavishkar</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="vanilla-tilt.js"></script>
+  <script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="jquery.backgroundMove.js"></script>
+
 </head>
 
-  <body class="bg">
- <img src="clg.png" alt="" class="fixed-top-right">
-<div data-tilt data-tilt-glare data-tilt-max-glare="0.8" id="allthethings">
+  <body>
+
+ <div id="games">
+   <img src="clg.png" alt="" class="fixed-top-right">
+<div id="allthethings">
   <div id="logo"><img src="heading.png" alt="" /></div>
   <div id="single"> Home</div>
 
@@ -23,9 +27,16 @@
   <div id="single">Locate Us</div>
   <div id="single">Our Team</div>
   <div id="single"> About Us</div>
-  <div id="single"> </div>
-</div>
 
+
+
+</div>
+<script>
+$('#games').backgroundMove({
+  movementStrength:'20'
+});
+</script>
+</div>
 
   </body>
 
